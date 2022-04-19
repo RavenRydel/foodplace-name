@@ -8,6 +8,14 @@ public class MenuItem {
     private String category;
     private boolean isNew;
 
+    public MenuItem(String name, double price, String description, String category, boolean isNew) {
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        this.category = category;
+        this.isNew = isNew;
+    }
+
     public String getName() {
         return name;
     }
@@ -45,14 +53,6 @@ public class MenuItem {
     }
 
     public void setIsNew(boolean isNew) {
-        this.isNew = isNew;
-    }
-
-    public MenuItem(String name, double price, String description, String category, boolean isNew) {
-        this.name = name;
-        this.price = price;
-        this.description = description;
-        this.category = category;
         this.isNew = isNew;
     }
 }
